@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uHL-QC-tvy">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="cMa-Mx-BN3">
+            <objects>
+                <viewController storyboardIdentifier="Home" useStoryboardIdentifierAsRestorationIdentifier="YES" id="uHL-QC-tvy" customClass="HomeViewController" customModule="RequestAccessSampler" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kgJ-a6-TbD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0FV-Vl-ew4" customClass="DefaultButton" customModule="RequestAccessSampler" customModuleProvider="target">
+                                <rect key="frame" x="133" y="149" width="54" height="30"/>
+                                <state key="normal" title="Camera"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1OP-af-u6d" customClass="DefaultButton" customModule="RequestAccessSampler" customModuleProvider="target">
+                                <rect key="frame" x="140" y="229" width="40" height="30"/>
+                                <state key="normal" title="Audio"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="McZ-hk-Ymi" customClass="DefaultButton" customModule="RequestAccessSampler" customModuleProvider="target">
+                                <rect key="frame" x="103.5" y="309" width="113" height="30"/>
+                                <state key="normal" title="PushNotification"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CAj-di-f7T" customClass="DefaultButton" customModule="RequestAccessSampler" customModuleProvider="target">
+                                <rect key="frame" x="114" y="389" width="92" height="30"/>
+                                <state key="normal" title="Photo Library"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="CAj-di-f7T" firstAttribute="centerX" secondItem="kgJ-a6-TbD" secondAttribute="centerX" id="5E1-US-Whp"/>
+                            <constraint firstItem="0FV-Vl-ew4" firstAttribute="centerY" secondItem="kgJ-a6-TbD" secondAttribute="centerY" constant="-120" id="7WE-q8-WwF"/>
+                            <constraint firstItem="1OP-af-u6d" firstAttribute="centerY" secondItem="kgJ-a6-TbD" secondAttribute="centerY" constant="-40" id="QJS-Ou-eea"/>
+                            <constraint firstItem="McZ-hk-Ymi" firstAttribute="centerX" secondItem="kgJ-a6-TbD" secondAttribute="centerX" id="Sfc-XL-o3n"/>
+                            <constraint firstItem="CAj-di-f7T" firstAttribute="centerY" secondItem="kgJ-a6-TbD" secondAttribute="centerY" constant="120" id="ZoT-Px-p7p"/>
+                            <constraint firstItem="1OP-af-u6d" firstAttribute="centerX" secondItem="kgJ-a6-TbD" secondAttribute="centerX" id="gUP-Wg-zeJ"/>
+                            <constraint firstItem="0FV-Vl-ew4" firstAttribute="centerX" secondItem="kgJ-a6-TbD" secondAttribute="centerX" id="tVw-4e-biX"/>
+                            <constraint firstItem="McZ-hk-Ymi" firstAttribute="centerY" secondItem="kgJ-a6-TbD" secondAttribute="centerY" constant="40" id="tYh-qt-6en"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="uPq-Lo-tRa"/>
+                    </view>
+                    <connections>
+                        <outlet property="audioButton" destination="1OP-af-u6d" id="Cty-an-UtO"/>
+                        <outlet property="cameraButton" destination="0FV-Vl-ew4" id="hAJ-QQ-3OG"/>
+                        <outlet property="photoLibraryButton" destination="CAj-di-f7T" id="3V2-yS-Qkm"/>
+                        <outlet property="pushNotificationButton" destination="McZ-hk-Ymi" id="lLQ-EZ-hab"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A2r-61-aL5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="55" y="90"/>
+        </scene>
+    </scenes>
+</document>
